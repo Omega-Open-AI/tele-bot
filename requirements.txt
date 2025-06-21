@@ -1,0 +1,79 @@
+# ============================================================================
+# Telegram AI Image Generator Bot - Requirements
+# ============================================================================
+# This file contains all Python dependencies required to run the bot
+# Compatible with Python 3.8+ on all major platforms (Linux, Windows, macOS)
+# ============================================================================
+
+# Core dependencies
+python-telegram-bot==20.7
+requests==2.31.0
+Pillow==10.1.0
+redis==5.0.1
+
+# Configuration and environment
+python-dotenv==1.0.0
+dataclasses-json==0.6.3
+
+# HTTP client
+httpx==0.25.2
+aiohttp==3.9.1
+
+# Data validation
+pydantic==2.5.2
+
+# Async support
+aioredis==2.0.1
+
+# Image processing
+opencv-python==4.8.1.78
+numpy==1.24.4
+
+# Logging and monitoring
+structlog==23.2.0
+
+# Testing dependencies
+pytest==7.4.3
+pytest-asyncio==0.21.1
+pytest-cov==4.1.0
+pytest-mock==3.12.0
+
+# Development dependencies
+black==23.11.0
+isort==5.12.0
+flake8==6.1.0
+mypy==1.7.1
+bandit==1.7.5
+safety==2.3.5
+
+# Performance monitoring
+psutil==5.9.6
+
+# Additional utilities
+typing-extensions==4.8.0
+click==8.1.7
+rich==13.7.0
+
+# ============================================================================
+# Platform-specific installation notes:
+# ============================================================================
+# 
+# Linux (Ubuntu/Debian):
+#   sudo apt update && sudo apt install python3-pip python3-dev
+#   pip3 install -r requirements.txt
+#
+# Windows:
+#   pip install -r requirements.txt
+#
+# macOS:
+#   pip3 install -r requirements.txt
+#
+# Termux (Android):
+#   pkg install python python-pip
+#   pip install -r requirements.txt
+#
+# Docker:
+#   FROM python:3.11-slim
+#   COPY requirements.txt .
+#   RUN pip install --no-cache-dir -r requirements.txt
+# ============================================================================
